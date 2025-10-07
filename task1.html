@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Webpage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'caveat': ['Caveat', 'cursive'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-pink-100 via-rose-200 to-purple-300 text-gray-800 font-sans m-0 p-5 min-h-screen relative">
+
+  <nav class="absolute top-5 left-5 flex gap-4 z-10">
+    <a href="#home" class="text-gray-800 no-underline font-bold text-lg transition-colors duration-300 hover:text-pink-500">Home</a>
+    <a href="#about" class="text-gray-800 no-underline font-bold text-lg transition-colors duration-300 hover:text-pink-500">About</a>
+    <a href="#contact" class="text-gray-800 no-underline font-bold text-lg transition-colors duration-300 hover:text-pink-500">Contact</a>
+  </nav>
+
+  <form action="#" method="POST" class="absolute top-5 right-5 max-w-md flex gap-3 z-10">
+    <input type="text" name="user-input" placeholder="Enter something..." required class="flex-1 px-3 py-2 rounded-md border border-gray-300 text-gray-800 text-base focus:outline-none focus:ring-2 focus:ring-purple-300 focus:border-transparent" />
+    <button type="submit" class="px-5 py-2 border-none rounded-md bg-purple-600 text-white text-base cursor-pointer transition-colors duration-300 hover:bg-purple-700">Submit</button>
+  </form>
+
+  <img src="C:\Users\hp\OneDrive\Desktop\internship\webdevelopment.jpg" alt="Sample" class="block max-w-full h-auto mx-auto mb-10 rounded-lg shadow-lg mt-20" />
+
+  <header class="text-center mb-8">
+    <h1 class="text-center">
+      <span class="text-gray-900 font-caveat font-medium text-5xl">Web Development</span>
+    </h1>
+  </header>
+
+  <main class="max-w-4xl mx-auto">
+    <p class="text-xl mb-5 leading-relaxed">Web development is the process of building, designing, and maintaining websites and web applications that run on the internet. It combines creativity and technical skills to create interactive and user friendly digital platforms. The process of web development can be broadly divided into three main areas<b> :</b> frontend development, backend development, and full-stack development.</p>
+
+    <p class="text-xl mb-5 leading-relaxed">Frontend development focuses on what users see and interact with directly in their web browsers. It involves the use of technologies like HTML <i class="text-gray-900">(HyperText Markup Language)</i> for structure, CSS <i class="text-gray-900">(Cascading Style Sheets)</i> for styling, and JavaScript for interactivity and dynamic behavior. Developers also use frameworks such as React, Angular, or Vue.js to create responsive and efficient user interfaces.</p>
+
+    <p class="text-xl mb-5 leading-relaxed">Backend development, on the other hand, deals with the server side of web applications. It manages the logic, database interactions, user authentication, and data processing. Popular backend languages and frameworks include Node.js, PHP, Python <i class="text-gray-900">(with Django or Flask)</i>, Java <i class="text-gray-900">(with Spring Boot)</i>, and Ruby on Rails. Databases like MySQL, MongoDB, or PostgreSQL are used to store and manage data efficiently.</p>
+
+    <p class="text-xl mb-5 leading-relaxed">Fullstack developers are skilled in both frontend and back-end technologies, allowing them to build complete web solutions independently.</p>
+
+    <p class="text-xl mb-5 leading-relaxed">In addition to coding, web development also includes web design, testing, deployment, and maintenance to ensure smooth performance and security. Modern web development emphasizes responsive design, ensuring websites work seamlessly on desktops, tablets, and mobile devices.</p>
+
+    <p class="text-xl mb-5 leading-relaxed">With the growing dependence on the internet for communication, business, education, and entertainment, web development has become one of the most in demand and evolving fields in technology. It plays a vital role in shaping the online experience and connecting people and organizations across the globe.</p>
+  </main>
+
+</body>
+</html>
